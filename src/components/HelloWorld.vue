@@ -34,15 +34,15 @@
 
 <script lang="ts">
 import { Options, Vue } from 'vue-class-component';
-
-@Options({
-  props: {
-    msg: String
+import {defineComponent,reactive} from 'vue'
+export default defineComponent({
+  props:{
+    msg:String
+  },
+  setup(props){
+    
   }
 })
-export default class HelloWorld extends Vue {
-  msg!: string
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
